@@ -119,3 +119,37 @@ nav a:hover{
     display:block;
     text-align: right;
 }
+
+.photogalery-item{
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 12px;
+    border-radius: 4px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.photogalery-item img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+}
+
+.photogalery-item figcaption{
+    color: #e0e0e0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
+
+
+.photogalery-item figcaption span{
+    color: #888;
+    font-size: 0.85rem;
+    font-family: 'Courier New', Courier, monospace;
+}
