@@ -132,7 +132,7 @@ nav a:hover{
 .photogalery-item img{
     width: 100%;
     height: auto;
-    display: block;
+    display: grid;
     border-radius: 2px;
 }
 
@@ -206,6 +206,7 @@ nav a:hover{
 .liquidator-card:hover .hover-info{
     opacity: 1;
     transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .hover-info h2{
