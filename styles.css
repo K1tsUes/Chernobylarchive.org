@@ -153,3 +153,100 @@ nav a:hover{
     font-size: 0.85rem;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.liquidator-display{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.liquidator-card{
+    position: relative;
+    height: 380px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
+
+.liquidator-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+
+}
+
+.liquidator-card img:hover{
+    transform: scale(1.05);
+}
+
+.hover-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 70%, rgba(0,0,0,0.4));
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3 ease;
+
+}
+
+.liquidator-card:hover .hover-info{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hover-info h2{
+    margin: 0 0 15px 0;
+    font-size: 1.4rem;
+    color: #ffffff;
+    border-bottom: 2px solid #ff9800;
+    padding-bottom: 5px;
+}
+
+.data{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0 ;
+}
+
+.data li{
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.data strong{
+    color: #ff9800;
+}
+
+.seebiobuton{
+    font-size: 0.8rem;
+    color: #4caf50;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid #4caf50;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 5px;
+    background-color: rgba(76,175,50,0.05);
+}
+
+.liquidator-card:hover .seebiobuton{
+    background-color: rgba(76,175 ,50 ,0.15 );
+}
