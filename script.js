@@ -1,5 +1,5 @@
-const message = document.getElementById("blogentry");
-const containerpost = document.getElementById("blog");
+const message = document.getElementById("publishform");
+const containerpost = document.getElementById(".blog");
 
 message.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -42,7 +42,7 @@ setInterval(function(){
         }
 
         if(minutes > 1){
-            spandate.textContent = `${minutes} ago`;
+            spandate.textContent = `${minutes} minutes ago`;
         }
     });
 }, 6000);
