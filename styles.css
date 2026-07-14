@@ -267,8 +267,15 @@ h3{
     border-radius: 4px;
     margin-top: 5px;
     background-color: rgba(76,175,50,0.05);
+    
 }
+
 
 .liquidator-card:hover .seebiobuton{
     background-color: rgba(76,175 ,50 ,0.15 );
+}
+
+.seebiobuton a{
+    text-decoration: none;
+    color: #4caf50;
 }
