@@ -329,8 +329,8 @@ h3{
     color: #fff;
 }
 
-@media(max-width: 650px){
-    /* 1. Header Navigation Menu */
+/*@media(max-width: 650px){
+    
     header {
         flex-direction: column;
         gap: 15px;
@@ -340,48 +340,48 @@ h3{
     .menulist {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px 20px; /* Snaps links into a clean wrap configuration */
+        gap: 15px 20px; 
     }
 
     nav a {
         font-size: 0.9rem;
     }
 
-    /* 2. Blog and Feed Sections */
+    
     #blogentry, #blog {
         margin: 20px auto;
         padding: 0 15px;
     }
 
     #blogentry button {
-        width: 100%; /* Makes submission comfortable to tap with thumbs */
+        width: 100%; 
         text-align: center;
     }
 
     .postcard p {
-        text-align: left; /* Prevents awkward wide letter spacing from justified text on small columns */
+        text-align: left; 
     }
 
-    /* 3. Photo Gallery Layout */
+   
     .photogalery-item {
         margin: 15px 10px;
         padding: 10px;
     }
 
-    /* 4. Liquidator Cards & Display Grid */
+    
     .liquidator-display {
-        grid-template-columns: 1fr; /* Forces a neat single-column stack */
+        grid-template-columns: 1fr; 
         margin: 20px auto;
         padding: 0 15px;
     }
 
     .liquidator-card {
-        height: 340px; /* Reduces container height to protect mobile viewport layout */
+        height: 340px; 
     }
 
     .hover-info {
-        opacity: 1; /* Automatically exposes hidden card stats for touchscreen devices */
+        opacity: 1; 
         transform: translateY(0);
         background: linear-gradient(to top, rgba(0,0,0,0.95) 85%, rgba(0,0,0,0.5));
     }
-}
+}*/
