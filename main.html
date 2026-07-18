@@ -16,34 +16,60 @@
                 <li><a href="liquidators.html">liquidators</a></li>
                 <li><a href="locations.html">locations</a></li>
                 <li><a href="">RBMK</a></li>
-                <li><a href="">future projects</a></li>
+                <li><a href="futureprojects.html">future projects</a></li>
                 <li><a href="">about</a></li>
             </ul>
         </nav>
     </header>
     </div>
 
-<div class="blogcont">
-    <!--user uploading section-->
-    <section id="blogentry">
-        <form id="publishform">
-            <input type="text" placeholder="Insert nickname" id="authorint">
-            <textarea placeholder="insert your entry" id="entry"></textarea>
-            <button type="submit">submit</button>
-        </form>
+ <section class="welcome-section">
+        <h1>CHERNOBYL DIGITAL ARCHIVE</h1>
+        <p>Welcome to the declassified terminal. Here you will find technical blueprints, historical records, and testimonies regarding the 1986 disaster. Proceed with caution; radiation protocols are strictly monitored.</p>
     </section>
-    <!--blog section-->
-    <section class="blog">
-        <h3>Last uploads</h3>
-        <div class="postcont">
-            
+
+    <!-- 2. Foro / Terminal Chat IRC -->
+    <section class="irc-container">
+        <div class="irc-header">
+            <span class="irc-title">COM-LINK // IRC-TERMINAL_v1.0.4</span>
+            <span class="irc-status" id="ircStatus">STATUS: UNAUTHORIZED</span>
+        </div>
+
+        <!-- Pantalla de Login (Se muestra primero) -->
+        <div id="ircLogin" class="irc-login-box">
+            <h3>ENTER CALLSIGN / NICKNAME</h3>
+            <p>Choose an identity to connect to the node channels.</p>
+            <div class="login-row">
+                <input type="text" id="nicknameInput" placeholder="e.g., Liquidator_86" maxlength="15">
+                <button onclick="connectToIRC()">CONNECT</button>
+            </div>
+        </div>
+
+        <!-- Pantalla del Chat IRC (Oculta hasta loguearse) -->
+        <div id="ircChatArea" class="irc-chat-area" style="display: none;">
+            <div class="irc-main-view">
+                <!-- Canal de Mensajes -->
+                <div class="irc-messages" id="ircMessages">
+                    <div class="irc-system">[SYSTEM] Connecting to server chat.pripyat.su:6667...</div>
+                    <div class="irc-system">[SYSTEM] Joined channel #exclusion-zone</div>
+                </div>
+                <!-- Lista de Usuarios Conectados -->
+                <div class="irc-users">
+                    <h4>USERS</h4>
+                    <ul id="usersList">
+                    </ul>
+                </div>
+            </div>
+            <!-- Input para enviar mensajes -->
+            <div class="irc-input-bar">
+                <span class="prompt" id="userPrompt">&lt;Guest&gt;:</span>
+                <input type="text" id="messageInput" placeholder="Type your transmission..." onkeypress="handleChatKeyPress(event)">
+            </div>
         </div>
     </section>
 
 
-</div>
-
-    
+ <script src="script.js"></script>   
 </body>
-<script src="script.js"></script>
+
 </html>
