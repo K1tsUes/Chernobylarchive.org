@@ -1,0 +1,99 @@
+.title{
+    max-width: 800px;
+    margin: 40px auto 20px auto;
+    padding: 0 20px;
+}
+
+.title h2{
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    border-bottom: 1px dashed #333333;
+    padding-bottom: 10px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#mapa{
+    max-width: 800px;
+    height: 520px;
+    margin: 0 auto 40px auto;
+    background-color: #0b0b0b;
+    border: 1px solid #333333;
+    border-left: 4px solid #00ff66;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}
+
+.leaflet-tile{
+    filter: brightness(0.65) invert(1) contrast(2.5) hue-rotate(200deg) saturate(0.3);
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+    background: #1c1c1c !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #333333 !important;
+    border-left: 3px solid #00ff66 !important;
+    border-radius: 4px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.8) !important; 
+}
+
+.leaflet-popup-content{
+    margin: 12px 15px !important;
+    line-height: 1.4 !important;
+}
+
+.leaflet-popup-content h4, .leaflet-popup-content b{
+    color: #00ff66 !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 1rem !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 0 6px 0 !important;
+    border-bottom: 1px dashed #333333;
+    padding-bottom: 4px;
+}
+
+.leaflet-popup-content p{
+    color: #e0e0e0 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 0.85rem !important;
+    margin: 0 0 8px 0 !important;
+
+}
+
+.leaflet-popup-content .coordinates{
+    color: #888888 !important;
+    font-size: 0.75rem !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    letter-spacing: 0.5px !important;
+    display: block;
+}
+
+.leaflet-container a.leaflet-popup-close-button{
+    color: #00ff66 !important;
+    padding: 5px !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover{
+    color: #ffffff !important;
+}
+
+@media(max-width: 840px) {
+    .title, #mapa {
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px) {
+    .title h2 {
+        font-size: 1.3rem;
+    }
+
+    #mapa {
+        height: 380px;
+    }
+}
