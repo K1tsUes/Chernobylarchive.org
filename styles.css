@@ -492,3 +492,85 @@ h3{
         background: linear-gradient(to top, rgba(0,0,0,0.95) 85%, rgba(0,0,0,0.5));
     }
 }*/
+
+.socialmedia{
+    margin-top: 100px;
+    padding: 40px 20px;
+    background-color: #0b0b0b;
+    border-top: 1px solid #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-content{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.disclaimer{
+    color: #5c5c5c;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    flex: 1;
+    min-width: 280px;
+    text-align: justify;
+}
+
+.discord-link{
+    color: #444;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #222;
+    border-radius: 4px;
+    background-color: #111;
+    transition: all 0.3s ease;
+
+}
+
+.discord-link:hover{
+    color: #00ff66;
+    border-color: #00ff66;
+    box-shadow: 0 0 12px rgba(0,255,102,0.3);
+    transform: translateY(-2);
+}
+
+.copy{
+    color: #333;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.help{
+    color: #b3b3b3;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.help strong{
+    color: #00ff66;
+    text-shadow: 0 0 5px rgba(0,255,102,0.3);
+
+}
+
+.help::before{
+    content: "[!]";
+    color: #ff3333;
+    font-weight: bold;
+    animation: terminal-blink 1.2s infinite steps(2, start);
+}
+
+@keyframes terminal-blink{
+    to{visibility: hidden;}
+}
