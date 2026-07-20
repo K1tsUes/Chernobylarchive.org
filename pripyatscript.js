@@ -2,9 +2,9 @@
 const mapa = L.map('mapa').setView([51.4045, 30.0542], 14);
 
 // 2. Cargar la capa de imágenes del mapa (OpenStreetMap)
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
   maxZoom: 18,
-  attribution: '© OpenStreetMap'
+  attribution: 'Tiles &copy; Esri'
 }).addTo(mapa);
 
 
