@@ -99,3 +99,23 @@ crearMarcador(
     "51.406744138502276º N, 30.05656742201265º E",
     radiationlevel.LOW
 );
+
+crearMarcador(
+    51.408098544002044, 
+    30.064778634377262,
+    "Cafe Pripyat",
+    "Located near the Yaniv Bay (a tributary of the Pripyat River) on Naberezhna Street, the Pripyat Cafe was a very popular spot for its views of the ships navigating through the port and for its impressive stained-glass art. Nowadays, it is badly preserved due to decades of looting and weather damage.",
+    "https://media-cdn.tripadvisor.com/media/photo-s/19/60/f3/28/pripyat-cafe-in-the-exclusion.jpg",
+    "51.408098544002044º N, 30.064778634377262º E",
+    radiationlevel.LOW
+);
+
+crearMarcador(
+    51.40144743247718, 
+    30.05145656487106,
+    "Paramilitary Fire Brigade 6 station(SVPCh-6)",
+    "Located on Zavodskaya Street, this was the main fire station in the city of Pripyat. On the night of the accident, the brigade was led by Lieutenant Viktor Kibenok.",
+    "https://www.chernobyl.one/wp-content/uploads/2020/05/Pripyat-Police-Fire-Station-07.jpg",
+    "51.40144743247718º N, 30.05145656487106º E",
+    radiationlevel.LOW
+)
