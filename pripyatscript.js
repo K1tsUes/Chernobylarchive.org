@@ -38,7 +38,7 @@ crearMarcador(
     30.0558, 
     "Parque de Atracciones", 
     "This is Pripyat's famous Ferris wheel, which was never officially opened. Located in the amusement park just behind the Energetik Palace of Culture, it was scheduled to open on May 1st, 1986. However, five days before the planned grand opening, the worst nuclear accident in history occurred at the nearby power plant, leading to the permanent evacuation of the city.", 
-    "ihttps://cdn.pixabay.com/photo/2016/05/01/22/51/pripyat-1366165_1280.jpg", // Ruta de tu imagen
+    "https://cdn.pixabay.com/photo/2016/05/01/22/51/pripyat-1366165_1280.jpg", // Ruta de tu imagen
     "51.4082° N, 30.0558° E"
 );
 
