@@ -37,27 +37,27 @@ crearMarcador(
     51.4082, 
     30.0558, 
     "Parque de Atracciones", 
-    "Famosa noria que nunca llegó a inaugurarse oficialmente debido al accidente.", 
-    "img/ferris-wheel.jpg", // Ruta de tu imagen
+    "This is Pripyat's famous Ferris wheel, which was never officially opened. Located in the amusement park just behind the Energetik Palace of Culture, it was scheduled to open on May 1st, 1986. However, five days before the planned grand opening, the worst nuclear accident in history occurred at the nearby power plant, leading to the permanent evacuation of the city.", 
+    "ihttps://cdn.pixabay.com/photo/2016/05/01/22/51/pripyat-1366165_1280.jpg", // Ruta de tu imagen
     "51.4082° N, 30.0558° E"
 );
 
 // Ejemplo 2: Hotel Polissya (Con imagen)
 crearMarcador(
-    51.4067, 
-    30.0556, 
+    51.406888984689495, 
+    30.058201646588643,  
     "Hotel Polissya", 
-    "Uno de los edificios más altos de la ciudad, usado como puesto de observación.", 
+    "Located off Kurchatov Street in Pripyat's central square, Hotel Polissya was the city's primary hotel. Beyond housing visitors, it featured a popular restaurant that hosted major local events and private celebrations like weddings. Following the 1986 evacuation, the hotel was repurposed as a headquarters and observation post by Valery Legasov and Boris Shcherbina to monitor the power plant's status and oversee the initial liquidation efforts.", 
     "img/hotel-polissya.jpg", 
-    "51.4067° N, 30.0556° E"
+    "51.406888984689495° N, 30.058201646588643° E"
 );
 
 // Ejemplo 3: Piscina Azure (Sin imagen, opcional)
 crearMarcador(
-    51.4085, 
-    30.0505, 
-    "Piscina Azure", 
-    "Siguió en uso por los liquidadores hasta 1998.", 
+    51.40685565253628, 
+    30.049247654522823, 
+    "Pool Azure(Lazurniy)", 
+    "Located just past the intersection of Sergeant Lazarev Street and Sportyvna Street, the Avanhard Sports Complex housed Pripyat's primary swimming pool. Local residents gathered here to swim and socialize. Following the 1986 evacuation, the facility remained active and was used by liquidators and power plant personnel until 1998.", 
     "", // Si dejas la comilla vacía, no muestra imagen
     "51.4085° N, 30.0505° E"
 );
