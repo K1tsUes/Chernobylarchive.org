@@ -33,10 +33,33 @@
     <h2>Pripyat map and POI</h2>
 </div>
 
-<!-- Corregido: id="mapa" en lugar de class="mapa" -->
+
 <div id="mapa"></div>
 
-<!-- Corregido: Primero Leaflet y al final tu script -->
+<section class="radlvl">
+    <div class="radlegend">
+        <ul class="radlevels">
+            <li>
+                <span class="rad-box low-color"></span>
+                <strong class="low-title">Low:</strong> Levels near or equal to normal background radiation. You can stay in these spots for long periods of time, including weeks.
+            </li>
+            <li>
+                <span class="rad-box med-color"></span>
+                <strong class="med-title">Medium:</strong> Levels slightly higher than background radiation. You can stay there for days without danger.
+            </li>
+            <li>
+                <span class="rad-box high-color"></span>
+                <strong class="high-title">High:</strong> Levels considerably higher than background radiation. You can stay there for hours. However, it is recommended to reduce exposure time as much as possible.
+            </li>
+            <li>
+                <span class="rad-box ext-color"></span>
+                <strong class="ext-title">Extreme:</strong> Levels in some spots can reach lethal doses within hours. It is recommended to minimize exposure (do not exceed one hour) and wear masks due to alpha and beta particles suspended in the air (FFP2 minimum, FFP3 optimal).
+            </li>
+        </ul>
+    </div>
+</section>
+
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="pripyatscript.js"></script>
 </body>
